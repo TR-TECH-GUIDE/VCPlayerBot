@@ -31,7 +31,6 @@ else:
 async def main():
     await bot.start()
     Config.BOT_USERNAME = (await bot.get_me()).username
-    await group_call.start()
     await start_stream()
     LOGGER.warning(f"{Config.BOT_USERNAME} Started.")
     await idle()
